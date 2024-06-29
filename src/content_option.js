@@ -1,5 +1,11 @@
+import Calc from "./assets/images/calc.png"
+import CalcGif from "./assets/gifs/calc.gif"
+import Cover from "./assets/images/cv.png"
+import CoverGif from "./assets/gifs/cover.gif"
 import BattleShip from "./assets/images/BattleShip.png"
 import BattleShipGif from "./assets/gifs/BattleShip.gif"
+import TicTac from "./assets/images/tictac.png"
+import TicTacGif from "./assets/gifs/tictac.gif"
 import ToDo from "./assets/images/todo.png"
 import ToDoGif from "./assets/gifs/todo.gif"
 
@@ -12,8 +18,8 @@ const meta = {
 const introdata = {
     title: "Hi, I'm Pierce Strutt",
     animated: {
-        first: "Data Analyst - BBA",
-        second: "Self-Taught Developer",
+        first: "Data Analyst - BBA.",
+        second: "Self-Taught Developer.",
         third: "Life-Long Learner.",
     },
     description: "Front End Developer and Data Analyst currently working out of Calgary.",
@@ -80,32 +86,42 @@ const services = [
 const dataportfolio = [{
     img: BattleShip,
     gif: BattleShipGif,
+    git: "",
     description: "Interactive BattleShip game on your web browser!",
     link: "#",
 },
 {
     img: ToDo,
     gif: ToDoGif,
+    git: "",
     description: "To-Do List Web Application",
-    link: "https://github.com/xadvent/toDoList",
+    link: "https://xadvent.github.io/toDoList/",
 },
 {
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    img: Calc,
+    gif: CalcGif,
+    git: "",
+    description: "Calculator Website",
+    link: "https://xadvent.github.io/calculatorWebpage/",
 },
 {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    img: TicTac,
+    gif: TicTacGif,
+    git: "",
+    description: "Tic Tac Toe",
+    link: "https://xadvent.github.io/ticTacToe/",
 },
 {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    img: Cover,
+    gif: CoverGif,
+    git: "",
+    description: "Resume/CV creator using React",
     link: "#",
 },
 {
     img: "https://picsum.photos/400/700/?grayscale",
+    gif: "",
+    git: "",
     description: "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",
 },

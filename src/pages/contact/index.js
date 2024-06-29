@@ -66,7 +66,7 @@ export const ContactUs = () => {
 
   return (
     <HelmetProvider>
-      <Container>
+      <Container className="animate">
         <Helmet>
           <meta charSet="utf-8" />
           <title>{meta.title} | Contact</title>

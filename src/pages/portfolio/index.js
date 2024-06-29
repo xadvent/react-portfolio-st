@@ -7,7 +7,7 @@ import { dataportfolio, meta } from "../../content_option";
 export const Portfolio = () => {
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container className="About-header animate">
         <Helmet>
           <meta charSet="utf-8" />
           <title> Portfolio | {meta.title} </title>{" "}
@@ -23,11 +23,12 @@ export const Portfolio = () => {
           {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" className="showing" />
-                <img src={data.gif} alt="" className="hidden" />
+                <img src={data.img} alt="" />
+                <img src={data.gif} alt="" />
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  <a href={data.link}>Live Link</a>
+                  <a href={data.git}>GitHub Repo</a>
                 </div>
               </div>
             );

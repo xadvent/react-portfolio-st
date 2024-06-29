@@ -1,12 +1,3 @@
-@keyframes slide-right {
-    0% {
-        transform: translateX(-100px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
 @keyframes opacity {
     from {
         opacity: 0;
