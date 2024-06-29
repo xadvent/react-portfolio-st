@@ -15,11 +15,11 @@ export const Home = () => {
           <title> {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center ">
-          <Slideshow /> {/* Ensure Slideshow is correctly used */}
+        <div className="intro_sec d-block d-lg-flex align-items-center animate">
+          <Slideshow /> 
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
-            <div className="align-self-center ">
-              <div className="intro mx-auto">
+            <div  className="align-self-center">
+              <div className="intro mx-auto animate">
                 <h2 className="mb-1x">{introdata.title}</h2>
                 <h1 className="fluidz-48 mb-1x">
                   <Typewriter
