@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
-import Slideshow from "./Slideshow";
+import Slideshow from "./Slideshow"; // Ensure correct path
 
 export const Home = () => {
   return (
@@ -16,7 +16,7 @@ export const Home = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
-          <Slideshow />
+          <Slideshow /> {/* Ensure Slideshow is correctly used */}
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">

@@ -7,6 +7,15 @@ section {
     transition: all .5s ease-in;
 }
 
+.h_bg-image {
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    position: relative;
+    transition: transform 0.4s ease-out; /* Adjust transition timing */
+}
+
+
 .who_am_I {
     font-family: Cinzel;
 }
@@ -231,4 +240,29 @@ section {
 
 .intro_sec .h_bg-image {
     filter: saturate(0.5);
+}
+
+/* Testing */
+.h_bg-image-enter {
+    transform: translateY(100%);
+}
+
+.h_bg-image-enter-active {
+    transform: translateY(0%);
+    transition: all 400ms ease-out;
+}
+
+.h_bg-image-exit {
+    transform: translateY(0%);
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.h_bg-image-exit-active {
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: translateY(-130%);
+    transition: all 400ms ease-out;
 }

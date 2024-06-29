@@ -1,31 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import BattleShip from "./assets/images/BattleShip.png"
+import BattleShipGif from "./assets/gifs/BattleShip.gif"
+import ToDo from "./assets/images/todo.png"
+import ToDoGif from "./assets/gifs/todo.gif"
 
 const logotext = "PIERCE S.";
 const meta = {
     title: "Pierce Strutt",
     description: "I’m Pierce Strutt, data analyst & front end developer, currently working in Calgary.",
-};
-
-const imgUrls = [
-    "https://images.unsplash.com/photo-1603903918933-b4db92870a0e?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1527519135413-1e146b552e10?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1518457607834-6e8d80c183c5?q=80&w=4074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1518352724948-729151797553?q=80&w=3748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
-    "https://images.unsplash.com/photo-1500885168199-dc1fde1d8177?q=80&w=4176&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-];
-
-const Slideshow = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % imgUrls.length);
-        }, 3000);
-
-        return () => clearInterval(interval);
-    }, []);
-
-    return imgUrls[currentIndex];
 };
 
 const introdata = {
@@ -97,14 +78,16 @@ const services = [
 ];
 
 const dataportfolio = [{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
+    img: BattleShip,
+    gif: BattleShipGif,
+    description: "Interactive BattleShip game on your web browser!",
     link: "#",
 },
 {
-    img: "https://picsum.photos/400/800/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    img: ToDo,
+    gif: ToDoGif,
+    description: "To-Do List Web Application",
+    link: "https://github.com/xadvent/toDoList",
 },
 {
     img: "https://picsum.photos/400/?grayscale",
@@ -185,5 +168,4 @@ export {
     contactConfig,
     socialprofils,
     logotext,
-    Slideshow
 };
