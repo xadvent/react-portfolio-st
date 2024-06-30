@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.05ed4d4a.css",
+    "main.js": "/static/js/main.a6b035a4.js",
+    "static/media/sign.png": "/static/media/sign.49c21c952004ad499e31.png",
+    "static/media/sign.gif": "/static/media/sign.7bb9e7dd5eba941a114c.gif",
+    "static/media/4sky.avif": "/static/media/4sky.44c48b64c3b76f899a91.avif",
+    "static/media/chess.gif": "/static/media/chess.0716efd1b4cbc40f08d0.gif",
+    "static/media/todo.gif": "/static/media/todo.76b66c21170c696a07b9.gif",
+    "static/media/chess.png": "/static/media/chess.62c273b8c0a5d206b594.png",
+    "static/media/BattleShip.gif": "/static/media/BattleShip.b851784171a2cfb59e00.gif",
+    "static/media/1water.avif": "/static/media/1water.b74181d85e0473116ea8.avif",
+    "static/media/5forest.avif": "/static/media/5forest.dd91ef925bcd1d1d95f2.avif",
+    "static/media/2desert.avif": "/static/media/2desert.4f72d01221928116797c.avif",
+    "static/media/cover.gif": "/static/media/cover.f95b22985ce93c9f48c3.gif",
+    "static/media/weather.gif": "/static/media/weather.a22f58b89297ca3a7bca.gif",
+    "static/media/deps.png": "/static/media/deps.7cc1b401cff9388556ae.png",
+    "static/media/calc.gif": "/static/media/calc.d7c568cb62c6e6125e98.gif",
+    "static/media/tictac.gif": "/static/media/tictac.bdc3a9b836b47d373087.gif",
+    "static/media/3lava.avif": "/static/media/3lava.e44a507f6f60ff94ee2c.avif",
+    "static/media/cv.png": "/static/media/cv.785c8e9d6a0ea7e936e7.png",
+    "static/media/todo.png": "/static/media/todo.5052b028bef387c83b67.png",
+    "static/media/weather.png": "/static/media/weather.76e4ef30583f066f0381.png",
+    "static/media/calc.png": "/static/media/calc.a52a7be0cdc68cc4f6b1.png",
+    "static/media/tictac.png": "/static/media/tictac.9a89f72125fe7eaaaec0.png",
+    "static/media/BattleShip.png": "/static/media/BattleShip.ca4dc2b925d7f55b6201.png",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.05ed4d4a.css",
+    "static/js/main.a6b035a4.js"
+  ]
+}
