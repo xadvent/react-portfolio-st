@@ -1,13 +1,20 @@
-import Calc from "./assets/images/calc.png"
-import CalcGif from "./assets/gifs/calc.gif"
-import Cover from "./assets/images/cv.png"
-import CoverGif from "./assets/gifs/cover.gif"
 import BattleShip from "./assets/images/BattleShip.png"
 import BattleShipGif from "./assets/gifs/BattleShip.gif"
+import Calc from "./assets/images/calc.png"
+import CalcGif from "./assets/gifs/calc.gif"
+import Chess from "./assets/images/chess.png"
+import ChessGif from "./assets/gifs/chess.gif"
+import Cover from "./assets/images/cv.png"
+import CoverGif from "./assets/gifs/cover.gif"
+import Deps from "./assets/images/deps.png"
+import Sign from './assets/images/sign.png'
+import SignGif from './assets/gifs/sign.gif'
 import TicTac from "./assets/images/tictac.png"
 import TicTacGif from "./assets/gifs/tictac.gif"
 import ToDo from "./assets/images/todo.png"
 import ToDoGif from "./assets/gifs/todo.gif"
+import Weather from './assets/images/weather.png'
+import WeatherGif from './assets/gifs/weather.gif'
 
 const logotext = "PIERCE S.";
 const meta = {
@@ -27,7 +34,7 @@ const introdata = {
 
 const dataabout = {
     title: "About Me",
-    aboutme: "Lorem ipsum idk",
+    aboutme: `Hi, I'm Pierce! I have a Bachelor of Business Administration with a double major in Data Analytics and Marketing, but my real passion is software development! I'm currently looking for any work opportunities to grow, develop, and prove my skills.`,
 };
 const worktimeline = [{
     jobtitle: "Deps.edn Updater for Clojure",
@@ -35,14 +42,14 @@ const worktimeline = [{
     date: "2024",
 },
 {
-    jobtitle: "ScotiaBank",
-    where: "Jamalya",
-    date: "2019",
+    jobtitle: "Open Source Developer",
+    where: "GitHub",
+    date: "2023-Present",
 },
 {
-    jobtitle: "Designer of week",
-    where: "ALquds",
-    date: "2019",
+    jobtitle: "Bachelors of Business Admin - Major in Data Analytics / Business Intelligence",
+    where: "Ambrose University, AB",
+    date: "2024",
 },
 ];
 
@@ -55,30 +62,30 @@ const skills = [{
     value: 85,
 },
 {
-    name: "CSS, HTML",
-    value: 90,
+    name: "CSS",
+    value: 70,
+},
+{
+    name: "Clojure",
+    value: 50,
 },
 {
     name: "Python",
-    value: 60,
+    value: 50,
 },
 {
-    name: "Rest API's",
-    value: 85,
+    name: "Rust",
+    value: "30",
 },
 ];
 
 const services = [
     {
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Front End Development",
+        description: "Website Developement using React, JavaScript, or SquareSpace",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
+        title: "UI / UX Design",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
 ];
@@ -86,77 +93,67 @@ const services = [
 const dataportfolio = [{
     img: BattleShip,
     gif: BattleShipGif,
-    git: "",
+    git: "https://github.com/xadvent/battleship",
     description: "Interactive BattleShip game on your web browser!",
-    link: "#",
+    link: "https://xadvent.github.io/battleship/",
 },
 {
     img: ToDo,
     gif: ToDoGif,
-    git: "",
+    git: "https://github.com/xadvent/toDoList",
     description: "To-Do List Web Application",
     link: "https://xadvent.github.io/toDoList/",
 },
 {
-    img: Calc,
-    gif: CalcGif,
-    git: "",
-    description: "Calculator Website",
-    link: "https://xadvent.github.io/calculatorWebpage/",
-},
-{
-    img: TicTac,
-    gif: TicTacGif,
-    git: "",
-    description: "Tic Tac Toe",
-    link: "https://xadvent.github.io/ticTacToe/",
+    img: Weather,
+    gif: WeatherGif,
+    git: "https://github.com/xadvent/weatherApp/deployments",
+    description: "Weather Application",
+    link: "https://xadvent.github.io/weatherApp/",
 },
 {
     img: Cover,
     gif: CoverGif,
-    git: "",
+    git: "https://github.com/xadvent/cv-application",
     description: "Resume/CV creator using React",
-    link: "#",
+    link: "https://resume-creator-ps.netlify.app/",
 },
 {
-    img: "https://picsum.photos/400/700/?grayscale",
+    img: TicTac,
+    gif: TicTacGif,
+    git: "https://github.com/xadvent/ticTacToe",
+    description: "Tic Tac Toe",
+    link: "https://xadvent.github.io/ticTacToe/",
+},
+{
+    img: Deps,
     gif: "",
-    git: "",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-
-{
-    img: "https://picsum.photos/400/600/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    git: "https://github.com/jaxank/DepsUpdater",
+    description: "Dependencies Updater for Clojure",
+    link: "https://github.com/jaxank/DepsUpdater",
 },
 {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    img: Calc,
+    gif: CalcGif,
+    git: "https://github.com/xadvent/calculatorWebpage",
+    description: "Calculator Website",
+    link: "https://xadvent.github.io/calculatorWebpage/",
 },
 {
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    img: Chess,
+    gif: ChessGif,
+    git: "https://github.com/xadvent/knightsTravails/",
+    description: "Knight Pathfinder - Breadth First Search Algorithm",
+    link: "https://xadvent.github.io/knightsTravails/",
 },
 {
-    img: "https://picsum.photos/400/550/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    img: Sign,
+    gif: SignGif,
+    git: "https://github.com/xadvent/sign-upForm",
+    description: "Sign-in page",
+    link: "https://xadvent.github.io/sign-upForm/",
 },
-{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/700/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-];
+]
 
 const contactConfig = {
     YOUR_EMAIL: "piercestrutt@gmail.com",
