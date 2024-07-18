@@ -3,7 +3,7 @@
         opacity: 0;
     }
 
-    to{
+    to {
         opacity: 1;
     }
 }
@@ -19,7 +19,9 @@
 }
 
 .animate {
-    animation: slide-up 1s ease, opacity 1s ease;
+    animation:
+        slide-up 1s ease,
+        opacity 1s ease;
 }
 
 .po_items_ho {

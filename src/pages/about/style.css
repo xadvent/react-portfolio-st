@@ -3,7 +3,7 @@
         opacity: 0;
     }
 
-    to{
+    to {
         opacity: 1;
     }
 }
@@ -19,11 +19,13 @@
 }
 
 .animate {
-    animation: slide-up 1s ease, opacity 1s ease;
+    animation:
+        slide-up 1s ease,
+        opacity 1s ease;
 }
 
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+    margin-bottom: calc(3rem + 5.128vw);
 }
 
 .table td,
@@ -39,7 +41,7 @@
     font-size: 16px;
     font-weight: 700;
     margin: 15px 0 20px;
-    font-family: 'Raleway';
+    font-family: "Raleway";
 }
 
 .progress {
@@ -93,7 +95,6 @@
 .service-section .service-category-title {
     padding-bottom: 4px;
 }
-
 
 /*! CSS Used keyframes */
 
