@@ -8,6 +8,13 @@ import "./style.css";
 
 const imgUrls = [Water, Desert, Lava, Sky, Forest];
 
+(() => {
+  imgUrls.forEach((picPath) => {
+      const img = new Image();
+      img.src = picPath;
+  });
+})()
+
 const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
