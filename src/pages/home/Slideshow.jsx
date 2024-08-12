@@ -8,29 +8,28 @@ import "./style.css";
 
 const imgUrls = [Water, Desert, Lava, Sky, Forest];
 
-const newImgs = imgUrls.map((url) => {
-  return (
-    <>
-      <div
-        className="h_bg-image order-1 order-lg-2 h-100"
-        style={{ backgroundImage: `url(${url})` }}
-      ></div>
-    </>
-  );
-});
-
 const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imgUrls.length);
-    }, 4000);
+    }, 3000); // Change image every 3 seconds
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
 
-  return newImgs[currentIndex];
+  return (
+    <>
+      {imgUrls.map((url, index) => (
+        <div
+          key={index}
+          className={`h_bg-image order-1 order-lg-2 h-100 ${index === currentIndex ? "" : "hidden"}`}
+          style={{ backgroundImage: `url(${url})` }}
+        ></div>
+      ))}
+    </>
+  );
 };
 
 export default Slideshow;
