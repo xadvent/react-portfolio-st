@@ -87,12 +87,12 @@ const skills = [
 const services = [
   {
     title: "Front End Development",
-    description: "Website Developement using React, JavaScript, or SquareSpace",
+    description: "Website Developement using React or SquareSpace",
   },
   {
     title: "UI / UX Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "I will help you decide how your website should look and feel in order to reach your customers best.",
   },
 ];
 
