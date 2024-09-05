@@ -25,6 +25,7 @@
 .h_bg-image {
     background-size: cover;
     background-position: center;
+    will-change: transform, opacity;
 }
 
 
@@ -49,8 +50,7 @@ section {
     background-position: center;
     min-height: 700px;
     position: relative;
-    transition: transform 0.4s ease-out;
-    /* Adjust transition timing */
+    transition: transform 0.6s ease-out; /* transition timing */
 }
 
 .who_am_I {

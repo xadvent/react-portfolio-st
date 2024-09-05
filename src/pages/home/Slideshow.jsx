@@ -22,7 +22,7 @@ const Slideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       fadeOutAndChange();
-    }, 3000); // Change image every 3 seconds
+    }, 5000); // 
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [photo]);
@@ -32,7 +32,7 @@ const Slideshow = () => {
     setTimeout(() => {
       setIsFading(false);
       changePhoto();
-    }, 300); // duration of the fade out
+    }, 500); // sync with css
   };
 
   const changePhoto = () => {
