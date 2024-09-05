@@ -241,6 +241,15 @@ section {
     justify-content: center;
 }
 
+.h_bg-image {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
+  
+  .h_bg-image.fade {
+    opacity: 0;
+  }
+
 @media (max-width: 991.98px) {
     .intro_sec .h_bg-image {
         height: 600px;

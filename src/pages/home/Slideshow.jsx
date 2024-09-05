@@ -10,31 +10,62 @@ const imgUrls = [Water, Desert, Lava, Sky, Forest];
 
 (() => {
   imgUrls.forEach((picPath) => {
-      const img = new Image();
-      img.src = picPath;
+    const img = new Image();
+    img.src = picPath;
   });
-})()
+})();
 
 const Slideshow = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [photo, setPhoto] = useState(0);
+  const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % imgUrls.length);
+      fadeOutAndChange();
     }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
+  }, [photo]);
+
+  const fadeOutAndChange = () => {
+    setIsFading(true);
+    setTimeout(() => {
+      setIsFading(false);
+      changePhoto();
+    }, 300); // duration of the fade out
+  };
+
+  const changePhoto = () => {
+    if (photo === 4) {
+      setPhoto(0);
+    } else {
+      setPhoto((prev) => prev + 1);
+    }
+  };
+
+  const returnPhotoUrl = () => {
+    switch (photo) {
+      case 0:
+        return Water;
+      case 1:
+        return Desert;
+      case 2:
+        return Lava;
+      case 3:
+        return Sky;
+      case 4:
+        return Forest;
+      default:
+        return null;
+    }
+  };
 
   return (
     <>
-      {imgUrls.map((url, index) => (
-        <div
-          key={index}
-          className={`h_bg-image order-1 order-lg-2 h-100 ${index === currentIndex ? "" : "hidden"}`}
-          style={{ backgroundImage: `url(${url})` }}
-        ></div>
-      ))}
+      <div
+        className={`h_bg-image order-1 order-lg-2 h-100 ${isFading ? "fade" : ""}`}
+        style={{ backgroundImage: `url(${returnPhotoUrl()})` }}
+      ></div>
     </>
   );
 };
