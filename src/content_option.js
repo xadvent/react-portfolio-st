@@ -37,7 +37,7 @@ const introdata = {
 const dataabout = {
   title: "About Me",
   aboutmefirst: `A little bit about me; I have a Bachelor of Business Administration with a double major in Data Analytics and Marketing, but my real passion is software development!`,
-  aboutmesecond: `I really enjoy working in a collaborative team environment and I adapt well in dymanic environments. I'm currently looking for any work opportunities to grow, develop, and prove my skills.`
+  aboutmesecond: `I really enjoy working in a collaborative team environment and I adapt well in dymanic situations. I'm currently looking for an opportunity to contribute and be a part of a progressive organization where I can also grow, develop, and prove my skills.`
 };
 const worktimeline = [
   {
@@ -165,7 +165,7 @@ const dataportfolio = [
 
 const contactConfig = {
   YOUR_EMAIL: "piercestrutt@gmail.com",
-  YOUR_FONE: "(778)873-3000",
+  YOUR_FONE: "(778) 873-3000",
   description: "Feel free to get in contact with me at any time!",
   YOUR_SERVICE_ID: "service_incvszl",
   YOUR_TEMPLATE_ID: "template_d2442oa",
