@@ -8,16 +8,17 @@ import "./style.css";
 
 const imgUrls = [Water, Desert, Lava, Sky, Forest];
 
-(() => {
-  imgUrls.forEach((picPath) => {
-    const img = new Image();
-    img.src = picPath;
-  });
-})();
-
 const Slideshow = () => {
   const [photo, setPhoto] = useState(0);
   const [isFading, setIsFading] = useState(false);
+
+  // Pre-loading images
+  (() => {
+    imgUrls.forEach((picPath) => {
+      const img = new Image();
+      img.src = picPath;
+    });
+  })();
 
   useEffect(() => {
     const interval = setInterval(() => {
