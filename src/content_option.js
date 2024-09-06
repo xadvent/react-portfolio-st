@@ -36,7 +36,8 @@ const introdata = {
 
 const dataabout = {
   title: "About Me",
-  aboutme: `Hi, I'm Pierce! I have a Bachelor of Business Administration with a double major in Data Analytics and Marketing, but my real passion is software development! I'm currently looking for any work opportunities to grow, develop, and prove my skills.`,
+  aboutmefirst: `A little bit about me; I have a Bachelor of Business Administration with a double major in Data Analytics and Marketing, but my real passion is software development!`,
+  aboutmesecond: `I really enjoy working in a collaborative team environment and I adapt well in dymanic environments. I'm currently looking for any work opportunities to grow, develop, and prove my skills.`
 };
 const worktimeline = [
   {
